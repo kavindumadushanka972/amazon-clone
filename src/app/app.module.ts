@@ -11,7 +11,8 @@ import { HeaderComponent } from './COMPONENTS/header/header.component';
 import { HomeComponent } from './PAGES/home/home.component';
 import { FooterComponent } from './COMPONENTS/footer/footer.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
-import { LoginComponent } from './PAGES/login/login.component'
+import { LoginComponent } from './PAGES/login/login.component';
+import { BannerComponent } from './PAGES/banner/banner.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './PAGES/login/login.component'
     HomeComponent,
     FooterComponent,
     CheckoutComponent,
-    LoginComponent
+    LoginComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
