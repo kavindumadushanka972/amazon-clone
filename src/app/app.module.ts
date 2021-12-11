@@ -6,11 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatIconModule } from '@angular/material/icon'
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from './COMPONENTS/header/header.component';
+import { HomeComponent } from './PAGES/home/home.component';
+import { FooterComponent } from './COMPONENTS/footer/footer.component';
+import { CheckoutComponent } from './PAGES/checkout/checkout.component';
+import { LoginComponent } from './PAGES/login/login.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    FooterComponent,
+    CheckoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
