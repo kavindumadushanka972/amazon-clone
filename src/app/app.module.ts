@@ -14,6 +14,7 @@ import { FooterComponent } from './COMPONENTS/footer/footer.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import { BannerComponent } from './PAGES/banner/banner.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { BannerComponent } from './PAGES/banner/banner.component'
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
