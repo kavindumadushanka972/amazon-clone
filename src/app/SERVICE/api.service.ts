@@ -13,5 +13,6 @@ export class ApiService {
   getJson():Observable<any>{
     return this.Http.get(this._jsonURL)
   }
+
 }
 

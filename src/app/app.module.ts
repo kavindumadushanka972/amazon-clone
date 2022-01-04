@@ -15,6 +15,7 @@ import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import { BannerComponent } from './PAGES/banner/banner.component'
 import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './COMPONENTS/products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     CheckoutComponent,
     LoginComponent,
-    BannerComponent
+    BannerComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
