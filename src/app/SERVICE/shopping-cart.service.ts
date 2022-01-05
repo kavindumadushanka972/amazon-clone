@@ -27,4 +27,24 @@ export class ShoppingCartService {
     let items:any = localStorage.getItem('shopping_cart')
     return JSON.parse(items)
   }
+
+  getCartLength = () => {
+    let products = this.get_shopping_cart_items()
+    return products ? this.get_shopping_cart_items().length : 0
+  }
+
+  getTotal = () => { // to get the total of check
+    let items = this.get_shopping_cart_items();
+    return items ?.reduce((acc: any, item: { price: any; }) => acc + item.price, 0) // adding item.price values
+  }
+
+  removeItem = (p: any) => {
+    let items = this.get_shopping_cart_items();
+    const index = items.findIndex((item: { id: any; }) => item.id == p.id)
+    if(index >= 0){
+        items.splice(index, 1);
+        return localStorage.setItem('shopping_cart', JSON.stringify(items))
+    }
+
+  }
 }

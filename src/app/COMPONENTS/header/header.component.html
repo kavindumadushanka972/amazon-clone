@@ -6,7 +6,7 @@
           <mat-icon>menu</mat-icon>
         </div>
   
-        <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header_menu_logo" alt="" srcset="">
+        <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header_menu_logo" alt="" srcset="" routerLink="/" style="cursor: pointer;">
   
         <div class="header_menu_searchbar">
           <input type="text" class="header_menu_input">
@@ -15,18 +15,18 @@
           </div>
         </div>
   
-        <div class="header_menu_signin">
+        <div routerLink="/login" class="header_menu_signin" style="cursor: pointer;">
           <span class="header_menu_top_item">Hello, Sign in</span>
           <span class="header_menu_bottom_item">Account & Lists</span>
         </div>
   
-        <div class="header_menu_signin">
+        <div routerLink="/login" class="header_menu_signin" style="cursor: pointer;">
           <span class="header_menu_top_item">Returns</span>
           <span class="header_menu_bottom_item">& Orders</span>
         </div>
-        <div class="header_menu_cart">
+        <div routerLink="/checkout" class="header_menu_cart" style="cursor: pointer;">
           <mat-icon>shopping_cart</mat-icon>
-          <p class="header_cart_number">3</p>
+          <p class="header_cart_number">{{shoppingCart.getCartLength()}}</p>
         </div>
       </div>
     </nav>
