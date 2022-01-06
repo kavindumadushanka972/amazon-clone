@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myclone-f4875": {
+      "hosting": {
+        "my-amazon-clone": [
+          "myclone-f4875"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myclone-f4875"
+  }
+}
