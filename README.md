@@ -1,5 +1,7 @@
 # MyAmazonClone
 
+### This is a clone of www.amazon.com done by using Angular. This have some functionalities of it. This doesn't use a backend. To handle data it use a JSON server and browser localstorage.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
 ## Development server
